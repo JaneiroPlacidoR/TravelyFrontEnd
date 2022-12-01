@@ -1,0 +1,99 @@
+.each-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-nosotros div{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 5%;
+    height: 45%;
+    opacity: 0.5;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.each-nosotros button{
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 3px solid white;
+    color: white;
+}
+
+.each-nosotros img{
+    width: 30%;
+}
+
+.each-nosotros:nth-child(1){
+ background-color: #587291;
+}
+
+.each-nosotros:nth-child(1):hover > div{
+    opacity:1;
+    }
+
+
+.each-nosotros:nth-child(2){
+    background-color:#2f97c1;
+   }
+
+
+
+   .each-nosotros:nth-child(2):hover > div{
+    opacity:1;
+    }
+
+   .each-nosotros:nth-child(3){
+    background-color: #f4d35e;
+   }
+
+
+
+
+   .each-nosotros:nth-child(3) > div{
+    opacity:1;
+    }
+
+   .nosotros{
+width: 100%;
+height: 83vh;
+   }
+
+  
+
+   .nosotros-group{
+    height: 83vh;
+   }
+
+   footer{
+    margin-top: 0px;
+   }
+
+   @media (max-width: 768px) {
+
+    .each-nosotros img{
+        width: 20%;
+    }
+    
+
+    .nosotros{
+        width: 100%;
+        height: 150vh;
+           }
+
+    .nosotros-group{
+        height: 150vh;
+       }
+
+       .each-nosotros{
+        height: 50vh;
+       }
+
+
+   }

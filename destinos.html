@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+         <link rel="shortcut icon" href="images/travely-logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link rel="stylesheet" href="css/hospedaje.css" />
+        <link rel="stylesheet" href="css/destinos.css" />
+
+        <!-- Google Maps JavaScript library -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyA7x5OnSu17B7QsgluzqLgh1Kf9i61FNN0"></script>
+
+   
+        <title>Travely</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="menu-sup">
+                    <a href="https://ohmdevs.com/travely/hospedaje" class="web-title">
+                        <h1 class="display-4">Travely</h1>
+                    </a>
+                    <div class="content-nav">
+                        <nav>
+                            <ul class="main-menu row">
+                                <li class="col-4"><a href="https://ohmdevs.com/travely/hospedaje">Hospedaje</a></li>
+                                <li class="col-4"><a href="https://ohmdevs.com/travely/destinos">Destinos</a></li>
+                                <li class="col-4">
+                                    <a href="https://ohmdevs.com/travely/nosotros">Nosotros</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="input-group" id="main-search-box">
+                            <input type="text" class="search_inp form-control" id="main-search" placeholder="Search"
+                                aria-label="search" aria-describedby="button-addon2" />
+                            <button class="btn btn-outline-secondary tosearchbtn" type="button" id="button-addon2"
+                                data-bs-dismiss="offcanvas" aria-label="Close">
+                                Buscar
+                            </button>
+                        </div>
+
+                        <button class="btn btn-primary hamburger btn-menu" id="offcanvas-button" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <a href="https://ohmdevs.com/travely/hospedaje">
+                                    <h2 class="offcanvas-title web-title" id="offcanvasExampleLabel">
+                                        Travely
+                                    </h2>
+                                </a>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- <div class="input-group mb-3">
+                                    <input type="text" class="search_inp form-control" placeholder="Search"
+                                        aria-label="search" aria-describedby="button-addon2" />
+                                    <button class="btn btn-outline-secondary tosearchbtn" type="button"
+                                        id="button-addon2" data-bs-dismiss="offcanvas" aria-label="Close">
+                                        Buscar
+                                    </button>
+                                </div> -->
+                                <div>
+                                    <ul class="second-menu">
+                                        <li>
+                                            <a href="https://ohmdevs.com/travely/hospedaje" class="col-4">Hospedaje</a>
+                                        </li>
+                                        <li><a href="https://ohmdevs.com/travely/destinos" class="col-4">Destinos</a></li>
+                                        <li>
+                                            <a href="https://ohmdevs.com/travely/nosotros" class="col-4">Nosotros</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <footer>
+                                <div class="copyandconditions">
+
+                                    <span>© 2022 Travely Todos los derechos reservados. Desarrollado por
+                                        OHMDEVS</span>
+                                    <ul class="row">
+                                        <li class="col-md-3"><a href="#">Condiciones de uso</a></li>
+                                        <li class="col-md-3"><a href="#">Aceptación de cookies</a></li>
+                                        <li class="col-md-3">
+                                            <a href="#">Declaración de Privacidad y Cookies</a>
+                                        </li>
+                                        <li class="col-md-3"><a href="#">Cómo funciona el sitio</a></li>
+                                    </ul>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>  
+            </header>
+            <section class="wrapper-destinos">
+                <header class="destinos-title-space">
+                   <h2 class="display-2" id="destinos-title">DESTINOS</h2>
+                </header>
+                <div class="destinos">
+                     
+                </div>
+               
+            </section>
+            <footer>
+                <div class="more-links row">
+                    <div class="about col-md-6">
+                        <ul>
+                            <li>
+                                <h5>Sobre nosotros</h5>
+                            </li>
+                            <li><a href="#">Acerca de Travely</a></li>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="#">Ofertas de trabajo</a></li>
+                            <li><a href="#">Contáctenos</a></li>
+                            <li><a href="#">Presentación</a></li>
+                            <li><a href="#">Artículos</a></li>
+                            <li><a href="#">Opiniones</a></li>
+                            <li><a href="#">Descubrir</a></li>
+                        </ul>
+                    </div>
+                    <div class="helps col-md-6">
+                        <ul>
+                            <li>
+                                <h5>Ayuda</h5>
+                            </li>
+                            <li><a href="#">Atención al cliente</a></li>
+                            <li>
+                                <a href="#">Preguntas frecuentes sobre el coronavirus (COVID-19)</a>
+                            </li>
+                            <li><a href="#">Descubre cómo funciona Travely</a></li>
+                            <li><a href="#">Información legal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyandconditions">
+                    <a href="https://ohmdevs.com/travely/hospedaje" class="web-title">
+                        <h5 class="display-6">Travely</h5>
+                    </a>
+                    <span>© 2022 Travely Todos los derechos reservados. Desarrollado por
+                        OHMDEVS</span>
+                    <ul class="row">
+                        <li class="col-md-3"><a href="#">Condiciones de uso</a></li>
+                        <li class="col-md-3"><a href="#">Aceptación de cookies</a></li>
+                        <li class="col-md-3">
+                            <a href="#">Declaración de Privacidad y Cookies</a>
+                        </li>
+                        <li class="col-md-3"><a href="#">Cómo funciona el sitio</a></li>
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
+       
+        <script src="js/queryjan.js"></script>
+        <script src="js/inicio.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/getDestinos.js"></script>
+    </body>
+
+</html>

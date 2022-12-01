@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredericka+the+Great&family=Leckerli+One&family=Alumni+Sans+Inline+One');
+
+
+.wrapper-destinos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.destinos-title-space {
+  background: rgb(0, 0, 0);
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#destinos-title {
+  position: sticky;
+  top: 55px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 10px;
+  font-size: 300px;
+  font-weight: bolder;
+  width: 100%;
+  color: transparent;
+  background-size: cover;
+  background-position-y: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: letter-image 10000ms infinite;
+
+}
+
+@keyframes letter-image {
+  0% {
+    background-image: url('../images/playa.jpg');
+  }
+
+  100% {
+    background-image: url('../images/playa.jpg');
+    background-position-y: bottom;
+  }
+}
+
+.destinos {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+.destino {
+  width: 100%;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  margin-bottom: 50px;
+  color: white;
+  background: black;
+  padding: 25px;
+}
+
+.page-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-info img {
+  width: 45%;
+  height: 300px;
+}
+
+.page-info p {
+  width: 45%;
+  text-align: justify;
+
+}
+
+.each-destino {
+  animation: title 2000ms infinite;
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+
+@keyframes title {
+  0% {
+    font-family: 'Leckerli One', cursive;
+
+  }
+
+  50% {
+    font-family: 'Fredericka the Great', cursive;
+
+  }
+
+  99% {
+    font-family: 'Alumni Sans Inline One', cursive;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  #destinos-title {
+    font-size: 200px;
+  }
+
+  .destinos {
+    width: 100%;
+  }
+
+  .destino {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .each-destino { 
+    font-size: 40px;
+  }
+
+  #destinos-title {
+    font-size: 100px;
+  }
+
+  .page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .page-info.rev {
+    flex-direction: column-reverse;
+  }
+
+
+
+  .page-info img {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .page-info p {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+
+  }
+
+}
+
+@media (max-width: 659px) {
+
+  .each-destino { 
+    font-size: 30px;
+  }
+
+  #destinos-title {
+    font-size: 80px;
+  }
+ 
+  body{
+background-color: black;
+  }
+  
+}
