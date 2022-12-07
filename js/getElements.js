@@ -5,7 +5,7 @@
 axios({
    method: "GET",
    
-   url: "https://travelyapi.herokuapp.com/api/resort/"
+   url: "https://travelyapi-production.up.railway.app/api/resort/"
 }).then((res) => {
    res.data.resorts.forEach(element => {
       console.log(element)

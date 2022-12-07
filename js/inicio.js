@@ -45,7 +45,7 @@ $(document).ready(function () {
         axios({
             method: "GET",
             
-            url: `https://travelyapi.herokuapp.com/api/resort/search/${location}`
+            url: `https://travelyapi-production.up.railway.app/api/resort/search/${location}`
          }).then((res) => {
 
             //vaciar resorts

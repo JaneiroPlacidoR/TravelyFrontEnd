@@ -1,7 +1,7 @@
 axios({
     method: "GET",
     
-    url: "https://travelyapi.herokuapp.com/api/resort/wikidestino/all"
+    url: "https://travelyapi-production.up.railway.app/api/resort/wikidestino/all"
  }).then((res) => {
     res.data.destinos.forEach(element => {
         console.log(element)
